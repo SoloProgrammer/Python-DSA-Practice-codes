@@ -14,13 +14,3 @@ def Insertion_sort(array):
 array = [2,1,5,4,3]
 Insertion_sort(array)
 print(array)
-
-f = [2,1,5,4,3]
-
-s = [1,2,5,4,3]
-
-t = [1,2,4,5,3]
-
-t = [1,2,4,3,5]
-
-t = [1,2,3,4,5]
