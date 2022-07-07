@@ -11,9 +11,10 @@ fibbo_list = []
 
 for i in range(numbers_to_print):
     fibbo_num = t1 + t2
+    print(fibbo_num,end = ",")
     fibbo_list.append(fibbo_num)
     t1 = t2
     t2 = fibbo_num
 
-print(fibbo_list)
+print(" \n " + str(fibbo_list))
 

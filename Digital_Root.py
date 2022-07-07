@@ -1,5 +1,3 @@
-from turtle import numinput
-
 
 def Retrive_root(num):
     sum = 0
