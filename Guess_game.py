@@ -2,7 +2,6 @@ import random
 
 no_of_guess = 1
 no_to_guess = random.randint(1,30)
-print(no_to_guess)
 
 no_of_try = 0
 
