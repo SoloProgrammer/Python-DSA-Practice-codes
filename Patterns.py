@@ -239,3 +239,84 @@ for i in range(1,n + 1):
     print('\n')
 
 
+# pattern 13..........................................
+
+# A
+# B C
+# C D E
+# D E F G
+# E F G H I
+# F G H I J K
+
+# first method to print given pattern is as follows ..
+
+for i in range(1,n + 1):
+    k = ord("A") 
+    if(i >= 2):
+        k += i - 1
+    for j in range(1,n + 1):
+        if(j <= i):
+            print(chr(k),end=' ')
+            k += 1
+        else:
+            print(" ",end=' ')
+    print("\n")
+
+
+# second method to print given pattern is as follows ..
+
+for i in range(n):
+    k = ord("A") + i
+    for j in range(n):
+        if(j <= i):
+            print(chr(k),end=' ')
+            k += 1
+        else:
+            print(" ",end=' ')
+    print("\n")
+
+
+# pattern 14..........................................
+
+# A
+# A B
+# A B A
+# A B A B
+# A B A B A
+# A B A B A B
+
+
+for i in range(0,n):
+    for j in range(0,n):
+        if(j <= i):
+            if(j%2 == 0):   
+                print(chr(k), end=' ')
+            else:
+                print(chr(k + 1), end=' ')
+        else:
+            print(" ",end=' ')
+    print('\n')
+
+# pattern 15..........................................
+
+# A
+# A B
+# A B C
+# A B C D
+# A B C D E
+# A B C D E F
+
+
+for i in range(0,n):
+    for j in range(0,n):
+        if(j <= i):
+            if(j >= 1):
+                print(chr(k + j),end=' ')
+            else:
+                print(chr(k),end=' ')
+
+        else:
+            print(" ",end=' ')
+    print('\n')
+
+
