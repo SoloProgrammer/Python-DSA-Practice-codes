@@ -26,7 +26,7 @@ def print_table(num,i):
 print_table(int(input("Enter num of which you want to print the table: ")),1)
 
 
-# print a Fibbonacci series upto n numbes - input hs to be taken from user  // using recursive function...................................
+# print a Fibbonacci series upto n numbes - input has to be taken from user  // using recursive function...................................
 
 fibbo_list = [] 
 def Fibbo_series(n,t1,t2):
@@ -45,3 +45,18 @@ def Fibbo_series(n,t1,t2):
 fibbo_list = Fibbo_series(int(input("Enter upto which you want to print Fibbonacci Series : ")),-1,1)
 
 print(fibbo_list)
+
+
+# print a Factorial of  n number  - input has to be taken from user  // using recursive function...................................
+
+def fact(num):
+    fact1 = 1
+    if(num > 0):
+        fact1 = num * fact(num - 1)
+        print(fact1)
+
+    return fact1
+
+    
+print_table(fact(int(input("Enter num of which you want to print the Factorial : "))))
+
