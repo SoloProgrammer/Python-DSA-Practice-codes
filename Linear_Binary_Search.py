@@ -26,9 +26,10 @@ def find_num(low,high):
         print(f"{num_to_search}  is found at position {len(arr) - 1} array {arr}")
     elif(arr[mid] < num_to_search):
         find_num(mid,high)
+    return arr[mid]
 
 
 low = 0
 high = len(arr) - 1
 
-find_num(low,high)
+print(find_num(low,high))

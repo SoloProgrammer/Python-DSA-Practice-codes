@@ -60,3 +60,20 @@ def fact(num):
     
 print_table(fact(int(input("Enter num of which you want to print the Factorial : "))))
 
+# print a Digital root of number  - input has to be taken from user  // using recursive function...................................
+
+
+print("Digital root code")
+
+def digi_root(provided_num):
+    root = 0
+    while(provided_num > 0):
+        root += provided_num % 10
+        provided_num = provided_num //10
+    
+    if(root > 10):
+        digi_root(root)
+    else:
+        print(root)
+
+digi_root(int(input("Enter number of which you want Digital root : ")))
