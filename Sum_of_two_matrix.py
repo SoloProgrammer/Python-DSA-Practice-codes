@@ -23,6 +23,7 @@ cols = int(input(("Enter no of colums you want in Matrix A and B : ")))
 print("Enter Matrix A :")
 
 A = input_matrix(rows,cols,"A",[])
+print(A)
 
 # output of A be like
 # [
@@ -35,6 +36,7 @@ A = input_matrix(rows,cols,"A",[])
 print("Enter Matrix B :")
 
 B = input_matrix(rows,cols,"B",[])
+print(B)
 
 # output of B be like
 
@@ -45,8 +47,6 @@ B = input_matrix(rows,cols,"B",[])
 #     [1, 0]
 # ]
 
-print(A)
-print(B)
 
 sum_of_two_matrix = Sum_Matrix(A,B,[])
 
