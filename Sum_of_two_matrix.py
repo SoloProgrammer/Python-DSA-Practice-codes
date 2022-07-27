@@ -18,7 +18,7 @@ def Sum_Matrix(A,B,result):
     return result
 
 rows = int(input(("Enter no of rows you want in Matrix A and B : ")))
-cols = int(input(("Enter no of colums rows you want in Matrix A and B : ")))
+cols = int(input(("Enter no of colums you want in Matrix A and B : ")))
 
 print("Enter Matrix A :")
 
