@@ -77,3 +77,18 @@ def digi_root(provided_num):
         print(root)
 
 digi_root(int(input("Enter number of which you want Digital root : ")))
+
+
+# print reversed of string  - input has to be taken from user  // using recursive function...................................
+
+
+def reverse_string(original_str,reverse_str = ""):
+    while(len(original_str) > 0):
+        reverse_str += original_str[len(original_str) - 1]
+        original_str = original_str[:len(original_str) - 1]
+        reverse_string(original_str,reverse_str)
+    return reverse_str
+
+
+
+print(reverse_string(input("Enter the String to reversed it : ")))
