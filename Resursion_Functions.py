@@ -92,3 +92,20 @@ def reverse_string(original_str,reverse_str = ""):
 
 
 print(reverse_string(input("Enter the String to reversed it : ")))
+
+# print reversed of list items  - input has to be taken from user  // using recursive function...................................
+
+def reversed_list(list1,result = []):
+    if(len(list1) > 0):
+        result.append(list1[len(list1) - 1])
+        list1 = list1[:len(list1) - 1]
+        reversed_list(list1,result)
+
+    return result
+
+list1 = []
+n = int(input("how many numbers do you want to insert in a list :"))
+for i in range(1,n + 1):
+    list1.append(int(input(f"Enter num {i} :")))
+
+print(reversed_list(list1))
